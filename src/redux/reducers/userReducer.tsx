@@ -6,6 +6,9 @@ import {User} from "../../models/User";
 export const defaultState: User = {
   isDarkMode: false,
   isLoggedIn: false,
+  username: '',
+  profileImg: '',
+  groups: [],
 };
 
 const UserReducer = produce((state = defaultState, action: Action) => {
